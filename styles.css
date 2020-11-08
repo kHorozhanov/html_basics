@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #F9F9F9;
+    color: #151515;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-green {
+    color: #6A983C;
+}
+
+.container {
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-chevron-down {
+    background: url("./assets/icons/ic-chevron-down.svg") no-repeat center center;
+}
+
+header {
+    background: #fff;
+    padding: 0 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 16px 0;
+}
+
+header hr {
+    opacity: 0.05;
+    border: none;
+    border-bottom: 1px solid #151515;
+    margin: 0;
+}
+
+.nav-left a:not(:first-child) {
+    margin-left: 33px;
+}
+
+.nav-right a:not(:first-child) {
+    margin-left: 38px;
+}
+
+.categories {
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    padding: 9px 15px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+
+.category-select {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
