@@ -6,6 +6,11 @@ body {
     margin: 0;
     background: #F9F9F9;
     color: #151515;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
 }
 
 a {
@@ -26,12 +31,35 @@ a {
 
 .icon {
     display: inline-block;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.icon-sm {
     width: 16px;
     height: 16px;
 }
 
+.icon-md {
+    width: 24px;
+    height: 24px;
+}
+
 .icon-chevron-down {
     background: url("./assets/icons/ic-chevron-down.svg") no-repeat center center;
+}
+
+.icon-search {
+    background: url("./assets/icons/ic-actions-search.svg") no-repeat center center;
+}
+
+.icon-user {
+    background: url("./assets/icons/ic-actions-user.svg") no-repeat center center;
+}
+
+.icon-cart {
+    background: url("./assets/icons/ic-ecommerce-basket.svg") no-repeat center center;
 }
 
 header {
@@ -42,7 +70,6 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -73,10 +100,12 @@ header hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0 48px;
 }
 
 .search {
     display: flex;
+    align-items: center;
     padding: 9px 15px;
     background: #F9F9F9;
     border: 1px solid #D1D1D1;
@@ -89,4 +118,71 @@ header hr {
     font-weight: bold;
     font-size: 15px;
     line-height: 22px;
+}
+
+.selected-category {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.selected-category::after {
+    content: '';
+    display: block;
+    border-right: 1px solid #D1D1D1;
+    height: 20px;
+    margin-left: 24px;
+}
+
+.selected-category .icon {
+    margin-left: 8px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    border: none;
+    background: transparent;
+    color: #A9A9A9;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    width: 262px;
+    padding: 0;
+    outline: none;
+    margin-right: 12px;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    position: relative;
+}
+
+.nav-icons a + a {
+    margin-left: 40px;
+}
+
+.counter {
+    position: absolute;
+    background: #E6704B;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    top: 14px;
+    right: 14px;
 }
